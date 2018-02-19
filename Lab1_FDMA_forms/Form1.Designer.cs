@@ -124,7 +124,6 @@
             this.label2.Size = new System.Drawing.Size(195, 13);
             this.label2.TabIndex = 9;
             this.label2.Text = "Частина обсуговуваних підсилювачів";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label3
             // 
@@ -175,7 +174,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(404, 281);
+            this.ClientSize = new System.Drawing.Size(1232, 621);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
