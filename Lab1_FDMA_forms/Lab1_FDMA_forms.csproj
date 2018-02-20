@@ -56,6 +56,7 @@
     <Compile Include="Models\Output.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="View_Models\OutputSchema.cs" />
     <Compile Include="View_Models\SchemaElement.cs">
       <SubType>Component</SubType>
     </Compile>
