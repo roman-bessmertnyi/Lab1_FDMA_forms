@@ -42,7 +42,7 @@ namespace Lab1_FDMA_forms
 
             Output = outputController.Calculate(Input);
 
-            schema.CreateSchema(50, 350, 1000);
+            schema.CreateSchema(50, 250, 1000);
         }
 
         
