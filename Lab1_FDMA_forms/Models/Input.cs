@@ -8,9 +8,8 @@ namespace Lab1_FDMA_forms.Models
 {
     public class Input
     {
-        public int Variant;
         public double WireLength;
-        public double ServicedBoosterStationPart;
         public int BoostedWiresNumber;
+        public double[] WireAlpha;
     }
 }

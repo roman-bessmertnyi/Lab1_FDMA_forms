@@ -28,19 +28,19 @@ namespace Lab1_FDMA_forms
         OutputSchema schema;
 
         public Output Output { get => output; set => output = value; }
+        public Input Input { get => input; set => input = value; }
 
         private void buttonCalculate_Click(object sender, EventArgs e)
         {
-            input.WireLength = Convert.ToDouble(textBoxWireLength.Text);
-            input.ServicedBoosterStationPart = Convert.ToDouble(textBoxServicedBoosterStationPart.Text);
-            input.BoostedWiresNumber = Convert.ToInt16(textBoxBoostedWiresNumber.Text);
+            Input.WireLength = Convert.ToDouble(textBoxWireLength.Text);
+            Input.BoostedWiresNumber = 4;
+            Input.WireAlpha = new double[4];
+            Input.WireAlpha[0] = Convert.ToDouble(textBox1.Text);
+            Input.WireAlpha[1] = Convert.ToDouble(textBox2.Text);
+            Input.WireAlpha[2] = Convert.ToDouble(textBox3.Text);
+            Input.WireAlpha[3] = Convert.ToDouble(textBox4.Text);
 
-            Output = outputController.Calculate(input);
-
-            textBoxBoosterWireLength.Text = Convert.ToString(Output.BoosterWireLength);
-            textBoxBoosterStationNumber.Text = Convert.ToString(Output.BoosterStationNumber);
-            textBoxServicedBoosterStationNumber.Text = Convert.ToString(Output.ServicedBoosterStationNumber);
-            textBoxUnservicedBoosterStationNumber.Text = Convert.ToString(Output.UnservicedBoosterStationNumber);
+            Output = outputController.Calculate(Input);
 
             schema.CreateSchema(50, 350, 1000);
         }
